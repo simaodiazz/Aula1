@@ -98,13 +98,6 @@ Console.ReadLine();
 
 ```csharp
 string nome;
-nome "Jorge Manuel"; <- Não está a existir qualquer declaração de varíavel
-Console.WriteLine(nome);
-Console.ReadLine();
-```
-
-```csharp
-string nome;
 nome = "Jorge Manuel";
 Console.WriteLine(name); <- Varíavel não existe
 Console.ReadLine(); 
