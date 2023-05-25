@@ -163,16 +163,18 @@ namespace ConsoleApplication1 {
 ```csharp
 using System;
 
-namespace ConsoleApplication1 {
-  
-  internal class Application {
-    
-    public static void Main(string[] args)
+namespace ConsoleApplication1
+{
+    internal class Application
     {
-      var num = 10;
-      Console.WriteLine("Número: " + num);
+        public static void Main(string[] args)
+        {
+            Console.Write("Digite um número: ");
+            var num = Console.ReadLine();
+            Console.WriteLine("");
+            Console.WriteLine(int.Parse(num));
+        }
     }
-  }
 }
 ```
 
@@ -188,9 +190,9 @@ namespace ConsoleApplication1 {
     public static void Main(string[] args)
     {
       Console.Write("Escreva um número: ");
-      var num = Console.Read();
+      var num = Console.ReadLine();
       
-      Console.WriteLine("Número: " + num);
+      Console.WriteLine("Número: " + int.Parse(num));
     }
   }
 }
@@ -208,12 +210,12 @@ namespace ConsoleApplication1 {
     public static void Main(string[] args)
     {
       Console.Write("Escreva um número: ");
-      var num1 = Console.Read();
+      var num1 = Console.ReadLine();
       
       Console.Write("Escreva outro número: ");
-      var num2 = Console.Read();
+      var num2 = Console.ReadLine();
       
-      Console.WriteLine("Número: " + (num1 * num2));
+      Console.WriteLine("Número: " + int.Parse(num1 * num2));
       Console.ReadLine();
     }
   }
@@ -232,15 +234,15 @@ namespace ConsoleApplication1 {
     public static void Main(string[] args)
     {
       Console.Write("Escreva um número: ");
-      var num1 = Console.Read();
+      var num1 = Console.ReadLine();
       
       Console.Write("Escreva outro número: ");
-      var num2 = Console.Read();
+      var num2 = Console.ReadLine();
       
-      Console.WriteLine("Número: " + (num1 * num2));
-      Console.WriteLine("Número: " + (num1 - num2));
-      Console.WriteLine("Número: " + (num1 + num2));
-      Console.WriteLine("Número: " + (num1 / num2));
+      Console.WriteLine("Multiplicação: " + (int.Parse(num1) * int.Parse(num2)));
+      Console.WriteLine("Divisão: " + (int.Parse(num1) / int.Parse(num2)));
+      Console.WriteLine("Subtração: " + (int.Parse(num1) - int.Parse(num2)));
+      Console.WriteLine("Soma: " + (int.Parse(num1) + int.Parse(num2)));
       Console.ReadLine();
     }
   }
@@ -277,20 +279,20 @@ using System;
 
 namespace ConsoleApplication1 {
   
-  internal class Application {
+    internal class Application {
     
-    public static void Main(string[] args)
-    {
+        public static void Main(string[] args)
+        {
 
-      Console.Write("Digita um numero: ");
-      var num1 = Console.Read();
+            Console.Write("Digita um numero: ");
+            var num1 = Console.ReadLine();
       
-      Console.Write("Digita outro numero: ");
-      var num2 = Console.Read();
+            Console.Write("Digita outro numero: ");
+            var num2 = Console.ReadLine();
       
-      Console.WriteLine(num1 == num2 ? "É igual" : "Não é igual");
+            Console.WriteLine(int.Parse(num1) == int.Parse(num2) ? "É igual" : "Não é igual");
+        }
     }
-  }
 }
 ```
 
@@ -301,20 +303,20 @@ using System;
 
 namespace ConsoleApplication1 {
   
-  internal class Application {
+    internal class Application {
     
-    public static void Main(string[] args)
-    {
+        public static void Main(string[] args)
+        {
 
-      Console.Write("Digita um numero: ");
-      var num1 = Console.Read();
+            Console.Write("Digita um numero: ");
+            var num1 = Console.ReadLine();
       
-      Console.Write("Digita outro numero: ");
-      var num2 = Console.Read();
+            Console.Write("Digita outro numero: ");
+            var num2 = Console.ReadLine();
       
-      Console.WriteLine(num1 == num2 ? "É igual" : "Não é igual");
+            Console.WriteLine(int.Parse(num1) == int.Parse(num2) ? "É igual" : "Não é igual");
+        }
     }
-  }
 }
 ```
 
@@ -325,21 +327,21 @@ using System;
 
 namespace ConsoleApplication1 {
   
-  internal class Application {
+    internal class Application {
     
-    public static void Main(string[] args)
-    {
+        public static void Main(string[] args)
+        {
 
-      Console.Write("Digita um numero: ");
-      var num1 = Console.Read();
+            Console.Write("Digita um numero: ");
+            var num1 = Console.ReadLine();
       
-      Console.Write("Digita outro numero: ");
-      var num2 = Console.Read();
+            Console.Write("Digita outro numero: ");
+            var num2 = Console.ReadLine();
       
-      Console.WriteLine(num1 == num2 ? "É igual" : "Não é igual");
-      Console.WriteLine(num1 > num2 ? "num1 é superior" : "num2 é inferior");
+            Console.WriteLine(int.Parse(num1) == int.Parse(num2) ? "É igual" : "Não é igual");
+            Console.WriteLine(int.Parse(num1) > int.Parse(num2) ? "num1 é superior" : "num2 é superior");
+        }
     }
-  }
 }
 ```
 
@@ -355,9 +357,9 @@ namespace ConsoleApplication1 {
     public static void Main(string[] args)
     {
       Console.Write("Digita um numero: ");
-      var num1 = Console.Read();
+      var num1 = Console.ReadLine();
 
-      Console.WriteLine(num1 > 0 ? "É positivo" : "É negativo");
+      Console.WriteLine(int.Parse(num1) > 0 ? "É positivo" : "É negativo");
     }
   }
 }
@@ -375,9 +377,9 @@ namespace ConsoleApplication1 {
     public static void Main(string[] args)
     {
       Console.Write("Digita um numero: ");
-      var num1 = Console.Read();
+      var num1 = Console.ReadLine();
 
-      Console.WriteLine(num1 % 2 == 0 ? "É par" : "É impar");
+      Console.WriteLine(int.Parse(num1) % 2 == 0 ? "É par" : "É impar");
     }
   }
 }
@@ -394,15 +396,14 @@ namespace ConsoleApplication1 {
     
     public static void Main(string[] args)
     {
-      var num1;
     
       Console.Write("Digita um numero: ");
-      num1 = Console.Read();
-      Console.WriteLine(num1 % 2 == 0 ? "É par" : "É impar");
+      var num1 = Console.ReadLine();
+      Console.WriteLine(int.Parse(num1) % 2 == 0 ? "É par" : "É impar");
       
       Console.Write("Digita um numero: ");
-      num1 = Console.Read();
-      Console.WriteLine(num1 % 2 == 0 ? "É par" : "É impar");
+      var num2 = Console.ReadLine();
+      Console.WriteLine(int.Parse(num2) % 2 == 0 ? "É par" : "É impar");
     }
   }
 }
@@ -436,17 +437,19 @@ using System;
 
 namespace ConsoleApplication1 {
   
-  internal class Application {
+    internal class Application {
     
-    public static void Main(string[] args)
-    {
-      var num1 = Console.Read();
-      for (var i = num1; i > 0; i--)
-      {
-        Console.WriteLine(i);
-      }
+        public static void Main(string[] args)
+        {
+            Console.Write("Escreva um numero: ");
+            var num1 = int.Parse(Console.ReadLine());
+            
+            for (var i = num1 - 1; i > 0; i--)
+            {
+                Console.WriteLine("O numero antrior a " + (i+1) + " é " + i);
+            }
+        }
     }
-  }
 }
 ```
 
@@ -462,10 +465,10 @@ namespace ConsoleApplication1 {
     public static void Main(string[] args)
     {
       Console.Write("Introduza o número inicial: ");
-      var num1 = Console.Read();
+      var num1 = int.Parse(Console.Read());
       
       Console.Write("Introduza o número final: ");
-      var num2 = Console.Read();
+      var num2 = int.Parse(Console.Read());
       
       for (var i = num1; i < num2; i++)
       {
@@ -492,14 +495,14 @@ namespace ConsoleApplication1 {
       {
 
         Console.Write("Introduza um número: ");
-        var num1 = Console.Read();
+        var num1 = Console.ReadLine();
 
         if (num1 == 0)
         {
           break;
         }
         
-        Console.WriteLine(num1 % 2 == 0 ? num1 + " é par" : num1 + " é impar");
+        Console.WriteLine(int.Parse(num1) % 2 == 0 ? int.Parse(num1) + " é par" : int.Parse(num1) + " é impar");
       }
     }
   }
@@ -513,23 +516,28 @@ using System;
 
 namespace ConsoleApplication1 {
   
-  internal class Application {
+    internal class Application {
     
-    public static void Main(string[] args)
-    {
-
-      var num1 = Console.Read();
-      var num2 = Console.Read();
-
-      for (var i = num1; i < num2; i++)
-      {
-        if (i % 2 == 0)
+        public static void Main(string[] args)
         {
-          Console.WriteLine(i + " é par");
+
+            Console.Write("Digite o numero mais baixo: ");
+            var num1 = int.Parse(Console.ReadLine());
+     
+            Console.Write("Digite o numero mais alto: ");
+            var num2 = int.Parse(Console.ReadLine());
+            
+            Console.WriteLine("");
+
+            for (var i = num1; i < num2; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i + " é par");
+                }
+            } 
         }
-      } 
     }
-  }
 }
 ```
 
@@ -540,27 +548,30 @@ using System;
 
 namespace ConsoleApplication1 {
   
-  internal class Application {
+    internal class Application {
     
-    public static void Main(string[] args)
-    {
-
-      var num1 = Console.Read();
-      var num2 = Console.Read();
-
-      var size = 0;
-
-      for (var i = num1; i < num2; i++)
-      {
-        if (i % 2 == 0)
+        public static void Main(string[] args)
         {
-          size++;
-        }
-      }
+
+            Console.Write("Digite o numero mais pequeno: ");
+            var num1 = int.Parse(Console.ReadLine());
+            
+            Console.Write("Digite o numero mais alto: ");
+            var num2 = int.Parse(Console.ReadLine());
+
+            var size = 0;
+
+            for (var i = num1; i < num2; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    size++;
+                }
+            }
       
-      Console.WriteLine(size);
+            Console.WriteLine("Existem " + size + " pares.");
+        }
     }
-  }
 }
 ```
 
@@ -575,26 +586,23 @@ namespace ConsoleApplication1
     {
         public static void Main(string[] args)
         {
-            var num1 = Console.Read();
-            var num2 = Console.Read();
+            Console.Write("Digite o valor mais baixo: ");
+            var num1 = int.Parse(Console.ReadLine());
+            
+            Console.Write("Digite o valor mais alto: ");
+            var num2 = int.Parse(Console.ReadLine());
 
-            var par = 0;
-            var impar = 0;
+            var pairs = 0;
+            var odds = 0;
 
             for (var i = num1; i < num2; i++)
             {
-                if (i % 2 == 0)
-                {
-                    par++;
-                }
-                else
-                {
-                    impar--;
-                }
+                if (i % 2 == 0) pairs++;
+                if (i % 2 != 0) odds++;
             }
 
-            Console.WriteLine(par);
-            Console.WriteLine(impar);
+            Console.WriteLine("Existem " + pairs + " numeros pares");
+            Console.WriteLine("Existem " + odds + " numeros impares");
         }
     }
 }
@@ -611,11 +619,12 @@ namespace ConsoleApplication1
     {
         public static void Main(string[] args)
         {
-            var num1 = Console.Read();
+            Console.Write("Escreva um numero: ");
+            var num1 = int.Parse(Console.ReadLine());
 
             for (var i = 1; i < 11; i++)
             {
-                Console.WriteLine(num1 * i);
+                Console.WriteLine(i + ": " + num1 * i);
             }
         }
     }
@@ -634,7 +643,8 @@ namespace ConsoleApplication1
         public static void Main(string[] args)
         {
 
-            var num1 = Console.Read();
+            Console.Write("Digite um numero: ");
+            var num1 = int.Parse(Console.ReadLine());
 
             Console.WriteLine((num1 % 2 != 0 && num1 % 3 != 0) ? "É primo" : "Não é primo");
         }
@@ -646,6 +656,7 @@ namespace ConsoleApplication1
 
 ```csharp
 using System;
+using System.Collections.Generic;
 
 namespace ConsoleApplication1
 {
@@ -653,21 +664,41 @@ namespace ConsoleApplication1
     {
         public static void Main(string[] args)
         {
-            var num1 = Console.Read();
-            var num2 = Console.Read();
 
-            var pares = 0;
-            var impares = 0;
-            var primos = 0;
+            Console.Write("Digite um numero: ");
+            var num1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite outro número: ");
+            var num2 = int.Parse(Console.ReadLine());
             
-            for (var i = num1; i < num2; i++)
+            Console.WriteLine("");
+
+            var pairs = new List<int>();
+            var odds = new List<int>();
+            var primes = new List<int>();
+
+            for (var i = num1; i <= num2; i++)
             {
-                pares += i % 2 == 0 ? 1 : 0;
-                impares += i % 2 != 0 ? 1 : 0;
-                primos += i % 2 != 0 && i % 3 != 0 ? 1 : 0;
+                if (i % 2 == 0)
+                {
+                    pairs.Add(i);
+                }
+
+                if (i % 2 != 0)
+                {
+                    odds.Add(i);
+                }
+
+                if (i % 2 != 0 && i % 3 != 0)
+                {
+                    primes.Add(i);
+                }
             }
-            
-            Console.WriteLine("Existem " + (num1 - num2) + " entre eles.");
+
+            Console.WriteLine("Existem {0} entre eles".Replace("{0}", (num2 - num1).ToString()));
+            Console.WriteLine("Existem {0} numeros pares".Replace("{0}", pairs.Count.ToString()));
+            Console.WriteLine("Existem {0} numeros impares".Replace("{0}", odds.Count.ToString()));
+            Console.WriteLine("Existem {0} numeros primos".Replace("{0}", primes.Count.ToString()));
         }
     }
 }
