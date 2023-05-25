@@ -1,3 +1,46 @@
+# Exercicio 7
+
+```csharp
+using System;
+
+namespace ConsoleApplication1 {
+  
+  internal class Application {
+    
+    public static void Main(string[] args)
+    {   
+      Console.WriteLine("Olá, chamo-me Pedro");
+      Console.WriteLine("Pedro é o meu nome");
+      Console.WriteLine("Sem dúvida que Pedro é quem está a trabalhar neste código.");
+
+      Console.ReadLine();
+    }
+  }
+}
+```
+
+# Exercicio 8
+```csharp
+using System;
+
+namespace ConsoleApplication1 {
+  
+  internal class Application {
+    
+    public static void Main(string[] args)
+    {   
+      
+      name = "Pedro";
+      Console.WriteLine("Olá, chamo-me " + name);
+      Console.WriteLine(name+ " é o meu nome");
+      Console.WriteLine("Sem dúvida que " + name + " é quem está a trabalhar neste código.");
+
+      Console.ReadLine();
+    }
+  }
+}
+```
+
 # Exercicio 9
 
 ```csharp
@@ -15,7 +58,7 @@ namespace ConsoleApplication1 {
       
       Console.WriteLine("Olá, chamo-me " + name);
       Console.WriteLine(name+ " é o meu nome");
-      Console.WriteLine("Sem dúvida que Pedro é quem está a trabalhar neste código.");
+      Console.WriteLine("Sem dúvida que " + name + " é quem está a trabalhar neste código.");
 
       Console.ReadLine();
     }
