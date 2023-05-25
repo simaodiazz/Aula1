@@ -114,7 +114,6 @@ Console.ReadLine();
 
 ````csharp
 string nome;
-nome "Jorge Manuel";
 ````
 
 ```csharp
